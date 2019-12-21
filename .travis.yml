@@ -23,7 +23,6 @@ after_success:
     - docker push luizparo/multi-worker
 
 deploy:
-    edge: true
     provider: elasticbeanstalk
     region: "us-east-1"
     env: "MultiDockerWithVpc-env"
